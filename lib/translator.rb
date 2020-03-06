@@ -19,8 +19,6 @@ def get_japanese_emoticon(file_path, emoticon)
   trnslt = emoji_hash["get_emoticon"][emoticon]
 end
     trnslt
-  end
-  
 end
 
 def get_english_meaning
