@@ -4,11 +4,11 @@ require "yaml"
 def load_library(file_path)
 emojis = YAML.load_file('./lib/emoticons.yml')
   emojis.inspect
-  emojis = {"get_meaning" =>{}, "get_emoticon" => {}}
+  emoji_hash = {"get_meaning" =>{}, "get_emoticon" => {}}
   
   emojis.each do |eng, emo|
-  emojis["get_emoticon"][emo.first] = emo.last
-  emojis["get_meaning"][emo.last] = eng
+  emoji_hash["get_emoticon"][emo.first] = emo.last
+  emoji_hash["get_meaning"][emo.last] = eng
 end
 emojis
 end
