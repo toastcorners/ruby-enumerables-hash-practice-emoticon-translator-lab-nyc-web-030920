@@ -15,7 +15,7 @@ end
 
 def get_japanese_emoticon(file_path, emoticon)
   # code goes here, translates eng to jap
-  emoji_hash = load_library(path)
+  emoji_hash = load_library(file_path)
   trnslt = emoji_hash["get_emoticon"][emoticon]
   trnslt 
 end
