@@ -8,7 +8,8 @@ emojis = YAML.load_file('./lib/emoticons.yml')
   emojis.inspect
   emojis = {"get_meaning" =>{
     
-    emojis.each do |
+    emojis.each do |eng, emo|
+      
   }, "get_emoticon" => {}}
 end
 
