@@ -23,7 +23,12 @@ end
 trnslt
 end
 
-def get_english_meaning
+def get_english_meaning(file_path, emoticon)
   # code goes here, translates jap to eng
-  
+  emoji_hash = load_library(file_path)
+    trnslt = emoji_hash["get_meaning"][emoticon]
+  if !trnslt
+    trnslt = "Sorry, that emoticon was not found"
+end
+trnslt
 end
