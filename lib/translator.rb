@@ -10,7 +10,7 @@ emojis = YAML.load_file('./lib/emoticons.yml')
   emoji_hash["get_emoticon"][emo.first] = emo.last
   emoji_hash["get_meaning"][emo.last] = eng
 end
-emojis
+emoji_hash
 end
 
 def get_japanese_emoticon
